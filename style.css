@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Magnitudes Físicas</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f3f5;
+      margin: 0;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .calculator-container {
+      background: #ffffff;
+      padding: 100px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+      width: 100%;
+      max-width: 1690px;
+      text-align: center;
+      font-size: 18px;
+      color: #2c3e50;
+      font-weight: 300;                         
+      line-height: 1.5;
+      font-size: 20px;
+      font-weight: 400;
+      text-align: center;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-image: linear-gradient(to bottom right, #3498db, #2ecc71);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-blend-mode: overlay;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      -moz-backdrop-filter: blur(10px);
+      -ms-backdrop-filter: blur(10px);
+      -o-backdrop-filter: blur(10px); 
+      background-color: rgb(255, 255, 255);
+    }
+
+    h1 {
+      margin-bottom: 5px;
+      color: #2c3e50;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-weight: normal;
+      color: #7f8c8d;
+    }
+
+    select,
+    input,
+    button {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      margin: 8px 0;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #3498db;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    .resultado {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #2c3e50;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #95a5a6;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator-container">
+    <h1>Calculadora de Magnitudes Físicas</h1>
+    <h2>Autores: Carlos Urieles y Leticia Vega</h2>
+    <select id="operacion">
+      <option value="">Seleccione un cálculo</option>
+      <option value="velocidad">Velocidad</option>
+      <option value="aceleracion">Aceleración</option>
+      <option value="fuerza">Fuerza</option>
+      <option value="trabajo">Trabajo</option>
+      <option value="energia">Energía Cinética</option>
+      <option value="potencia">Potencia</option>
+      <option value="densidad">Densidad</option>
+      <option value="presion">Presión</option>
+      <option value="voltaje">Voltaje</option>
+      <option value="resistencia">Resistencia</option>
+    </select>
+
+    <div id="formulario"></div>
+    <div class="resultado" id="resultado"></div>
+    <footer>Diseñado por Carlos Urieles y Leticia Vega</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

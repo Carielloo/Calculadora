@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de Magnitudes Físicas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator-container">
+    <h1>Calculadora Física UCC</h1>
+    <h2>Ingeniería de Software</h2>
+
+    <select id="operacion" onchange="mostrarFormulario()">
+      <option value="">Seleccione un cálculo</option>
+      <option value="velocidad">Velocidad</option>
+      <option value="aceleracion">Aceleración</option>
+      <option value="fuerza">Fuerza</option>
+      <option value="trabajo">Trabajo</option>
+      <option value="potencia">Potencia</option>
+      <option value="presion">Presión</option>
+      <option value="densidad">Densidad</option>
+      <option value="energiaCinetica">Energía Cinética</option>
+      <option value="energiaPotencial">Energía Potencial</option>
+      <option value="ohm">Ley de Ohm</option>
+    </select>
+
+    <div id="formulario"></div>
+    <div class="resultado" id="resultado"></div>
+
+    <footer>Diseñado por Ing. Carlos Urieles y Leticia Vega </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
